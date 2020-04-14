@@ -5,7 +5,7 @@ let stdin = process.openStdin();
 
 stdin.addListener("data", (txt) => {
     if(txt.toString().trim() === "quit") {
-        console.log("\nHave a nice JS trip! Thanks for using our software. Bye-bye.");
+        console.log("\nHave a nice JS trip! Thanks for using our software. Good bye.");
         stdin.end();
     } else {
         console.log(`\nHi ${txt.toString().trim()}, nice to meet you at Eleks QA Academy 2020. I am sure you'll become great in your job.`);
