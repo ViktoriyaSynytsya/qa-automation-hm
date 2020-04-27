@@ -1,21 +1,32 @@
 /*Write a JavaScript function to check if given string includes given symbol.*/
 
-let str = 'I have a cat'
+function containsSymbol(str, sym) {
+    if (str.indexOf(sym) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-let sym = str.indexOf("a")
-console.log(sym)
+
+let str = 'I have a cat';
+let sym = 'a';
+console.log("containsSymbol result: " + containsSymbol(str, sym));
 
 /*Write a JavaScript function to check whether a string is blank or not (string with spaces should be also blank).*/
 
-let blank = function(str) {
-    if (str.length===0 && str.indexOf(' '))
-    return true;
-    else 
-    return false;
+function blank(str) {
+    if (str.trim().length === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
 }
-console.log(blank('I have a cat'))
-console.log(blank(''))
-console.log(blank(' '))
+console.log('1 case: ' + blank('I have a cat'))
+console.log('2 case: ' + blank(''))
+console.log('3 case: ' + blank(' '))
 
 /*Write a JavaScript function to convert a string in abbreviated form. console.log(abbrev (“Nazar Babii")) 
 – should be “N.B.” (should convert lower case names to upper)*/
@@ -23,66 +34,45 @@ console.log(blank(' '))
 let name = 'viktoriya synytsya'
 let name2 = name.split(' ')
 /*console.log(name2)*/
- let name3 = name2[0]
- let name4 = name2[1]
- let name5 = name3.charAt(0)
- let name6 = name4.charAt(0)
- console.log(name5.toUpperCase()+'.'+name6.toUpperCase()+'.')
+let name3 = name2[0]
+let name4 = name2[1]
+let name5 = name3.charAt(0)
+let name6 = name4.charAt(0)
+console.log(name5.toUpperCase() + '.' + name6.toUpperCase() + '.')
 
- /*Write a JavaScript function that accept two integers and display the larger.*/
+/*Write a JavaScript function that accept two integers and display the larger.*/
 
- let fun = function(n1,n2) {
-   if (n1>n2)
-   return n1;
-   if (n2>n1)
-   return n2
+let max = function (n1, n2) {
+    if (n1 > n2)
+        return n1;
+    else
+        return n2
 
- }
-console.log(fun(5,7))
- /*Write a JavaScript function with conditional statement to sort three numbers.*/
-let integer1 = 2
-let integer2 = 3
-let integer3 = 4
-   if (integer1 <= integer2 && integer1 <= integer3)
-   {
-       if (integer1 <= integer2)
-       {
-       console.log(integer1+','+integer2+','+integer3)
-       }
-   
-       else
-       {
-       console.log(integer1+','+integer3+','+integer2)
+}
+console.log(max(5, 7))
+/*Write a JavaScript function with conditional statement to sort three numbers.*/
 
-       } 
-   }
-   if (integer2 <= integer1 && integer2 <= integer3)
-   {
-       if (integer2 <= integer1)
-       {
-        console.log(integer2+','+integer1+','+integer3)   
-       }
-       else
-       {
-        console.log (integer2+','+integer3+','+integer1)
-       }
-    }
-    if(integer3 <= integer1 && integer3 <= integer2)
-    {
-        if(integer3 <= integer1)
-        {
-        console.log (integer3+','+integer1+','+integer2)    
+
+function sort(a, b, c) {
+    if (a < b && a < c) {
+        if (b < c) {
+            console.log(a, b, c)
+        } else {
+            console.log(a, c, b)
         }
-        else{
-        console.log (integer3+','+integer2+','+integer1)        
+    } else if (b < a && b < c) {
+        if (a < c) {
+            console.log(b, a, c)
+        }
+        else {
+            console.log(b, c, a)
+        }
+    } else {
+        if (a < b) {
+            console.log(c, a, b)
+        } else {
+            console.log(c, b, a)
         }
     }
-
-
-
-
-
-
-
-
-
+}
+sort(8,6,0)
