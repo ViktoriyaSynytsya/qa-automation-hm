@@ -39,5 +39,5 @@ async function loginAsync(email, pass) {
 }
 
 
-Promise.all([login('viktoriasynytsa@gmail.com', '12345'), loginAsync("aaaqq@mail.com", "65774")])
-  .then((results) => { console.log(results) })
+Promise.all([login('viktoriasynytsa@gmail.com', '12345'), loginAsync("aaaqq@mail.com", "609974")])
+  .then((results) => { console.log(results) }) 
