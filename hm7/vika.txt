@@ -1,1 +1,1 @@
-{"_name":"Vika","_surname":"b","_rate":"3"}
+{"_name":"Vika","_surname":"b","_rate":"3"}{"_name":"Kolya","_surname":"b","_rate":"3"}
