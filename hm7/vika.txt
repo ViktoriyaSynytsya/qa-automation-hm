@@ -1,0 +1,1 @@
+{"_name":"Vika","_surname":"b","_rate":"3"}
