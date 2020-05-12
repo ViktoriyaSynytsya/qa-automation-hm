@@ -1,10 +1,6 @@
-let fs = require("fs")
-/*let st = json.parse({
-    "name": "Viktoriya",
-    "surname": "Synytsya",
-    "rate": 100
-
-})*/
+let fs = require("fs");
+let randomstring = require("randomstring");
+let math = require('math-random')
 
 class Student {
     constructor(name, surname, rate) {
@@ -21,7 +17,17 @@ class Student {
     }
 }
 
-let vika = new Student('Vika', 'b', '3')
+//let vika = new Student('Vika', 'b', '3')
+let vika = new Student(randomstring.generate({
+    length: 12,
+    charset: 'alphabetic'
+  }), 
+    randomstring.generate({
+    length: 12,
+    charset: 'alphabetic'
+  }), '100')
+ 
+
 console.log(vika)
 let vikaJson = JSON.stringify(vika);
 console.log(vikaJson);
