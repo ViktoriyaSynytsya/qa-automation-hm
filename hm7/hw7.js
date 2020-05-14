@@ -1,6 +1,10 @@
 let fs = require("fs");
 let randomstring = require("randomstring");
-let math = require('math-random')
+//let math = require('math-random')
+function getRandomInt() {
+    return Math.floor((Math.random() * 100)+1);
+  }
+//console.log(getRandomInt())
 
 class Student {
     constructor(name, surname, rate) {
@@ -25,7 +29,7 @@ let vika = new Student(randomstring.generate({
     randomstring.generate({
     length: 12,
     charset: 'alphabetic'
-  }), '100')
+  }), getRandomInt())
  
 
 console.log(vika)
