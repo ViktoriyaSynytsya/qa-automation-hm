@@ -1,0 +1,14 @@
+//CSS
+//Logo
+ .mw-wiki-logo
+
+ //Div element of Article count
+ div [id='articlecount']>a 
+
+ //Main page link
+ [href*="https://en.wikipedia.org/wiki/Main_Page"]
+
+ //2-nd item from "Did you know…" list
+ div.dyk-img
+ div>ul>li>a href=''
+
