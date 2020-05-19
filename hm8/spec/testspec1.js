@@ -1,7 +1,9 @@
 
- describe("Hello world", function() {
-  it("Hello test", function(){})
+describe("Hello world", function () {
+  it("Hello test", function () { 
+    expect(true).toBe(false)
   })
+})
 
 // let funSpec1 = require("/hm8/fun1.js")
 // let Jasmine = require('jasmine');
