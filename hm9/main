@@ -1,14 +1,27 @@
 //CSS
-//Logo
+ --*Logo*
  .mw-wiki-logo
 
- //Div element of Article count
+ --*Div element of Article count*
  div [id='articlecount']>a 
 
- //Main page link
+ -- *Main page link*
  [href*="https://en.wikipedia.org/wiki/Main_Page"]
 
- //2-nd item from "Did you know…" list
+ -- *2-nd item from "Did you know…" list*
  div.dyk-img
  div>ul>li>a href=''
+
+//XPath
+ --*Logo*
+ //a[contains(@class, "mw-wiki-logo")]
+
+--*Div element for Article count*
+ //div[@id="articlecount"]
+
+--*4-th item from "Did you know…" list*
+//div[@id="mp-dyk"]//li[4]
+
+--*Count of ‘Interaction’ elements*
+//count(div[@id="p-interaction"]//div[@class="body"]//ul)
 
