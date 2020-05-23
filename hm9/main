@@ -3,14 +3,14 @@
  .mw-wiki-logo
 
  --*Div element of Article count*
- div [id='articlecount']>a 
+ div#articlecount>a:nth-of-type(1)
 
  -- *Main page link*
  [href*="https://en.wikipedia.org/wiki/Main_Page"]
+ [href*="wikipedia.org/wiki/M"]
 
  -- *2-nd item from "Did you know…" list*
- div.dyk-img
- div>ul>li>a href=''
+#mp-dyk>ul>li:nth-of-type(2)
 
 //XPath
  --*Logo*
@@ -23,5 +23,5 @@
 //div[@id="mp-dyk"]//li[4]
 
 --*Count of ‘Interaction’ elements*
-//count(div[@id="p-interaction"]//div[@class="body"]//ul)
+count(//div[@id="p-interaction"]//div[@class="body"]//li)
 
