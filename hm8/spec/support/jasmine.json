@@ -2,8 +2,10 @@
   "spec_dir": "spec",
   "spec_files": [
     
-    "fun1_spec.js",
-    "fun2_spec.js"
+    "fun_spec.js",
+    "fun1_spec.js"
+
+    
   ],
   "helpers": [
     "helpers/**/*.js"
